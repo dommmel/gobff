@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package user;
+option go_package = "github.com/dommmel/gobff/user";
+
+service UserService {
+  rpc GetUser (UserRequest) returns (UserResponse);
+}
+
+message UserRequest {
+  int32 id = 1;
+}
+
+message UserResponse {
+  int32 id = 1;
+  string name = 2;
+}
