@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mkdir -p app/api/generated
+mkdir -p app/grpc/generated
 
 GENERATED_CODE_DIR=./app/grpc/generated
 PROTO_DIR=../golang-backend/user
